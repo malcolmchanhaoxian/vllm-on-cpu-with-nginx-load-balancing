@@ -1,6 +1,8 @@
 # vllm-on-cpu-with-nginx-load-balancing-with-Google-Compute-Engine
 
-![image](https://github.com/user-attachments/assets/40dd5332-6ae9-4b05-85f6-987c97b97739)
+<p align="center">
+<img src = "https://github.com/user-attachments/assets/40dd5332-6ae9-4b05-85f6-987c97b97739" width = "600">
+</p>
 
 
 ## Introduction
