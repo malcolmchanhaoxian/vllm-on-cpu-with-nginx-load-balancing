@@ -24,6 +24,19 @@ There are a few methods to tackle this - Intel introduced a method of distribute
 We are utilising a VM on Google Cloud. The specific SKU is c4-highmem-192 which features 192 vcpus. This SKU is selected to display the nature of VMs on cloud and the availability of multi-socket, multi-NUMA node.
 Model utilised is microsoft/Phi-3.5-mini-instruct.
 
+#### Step-by-step Instructions
+1. Google Compute Engine VM Creation on gcloud
+```
+# Use the following codes. This is just a snippet of the critical details.
+
+gcloud compute instances create <VM-NAME> \
+    --project=malcolmchanapj-intel \
+    --zone=us-central1-a \
+    --machine-type=c4-highmem-192 \
+    --threads-per-core=1 \
+    --visible-core-count=96 
+```
+
 ## Findings
 To document and assess the performance of our baseline VM and the efficacy of the solution, we will be using Locust load-testing method. Locust will allow us to set a specific concurrent user count and the latency performance of the VM itself.
 
